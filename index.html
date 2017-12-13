@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	
 	<title>FOODMAP</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -11,27 +11,63 @@
 
 </head>
 <body>
-<div>
+<!--seccion compuesta por Vista Splash - Preloader-->
+<header>
 	<div class="content">
 	<div class="row">
-	<div class="col s12">
+	<div class="col s12 col m12">
 		<h1>FOODMAP</h1>
 		<h2>Guatita llena, Corazón contento!!!</h2>
-		<div class="spinner-layer spinner-red">
-        <div class="circle-clipper left">
-          <div class="circle"></div>
-        </div><div class="gap-patch">
-          <div class="circle"></div>
-        </div><div class="circle-clipper right">
-          <div class="circle"></div>
-        </div>
+		<div class="preloader-wrapper active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
       </div>
+    </div>
+  </div>
 		</div>
 	</div>
 </div>
-	<!--script-->
+</header>
+<!--Filtrar opciones de comida-->
+<section>
+<div class="category_container">
+	<div class="row">
+		<div class="col s6 m4">
+		<p class="category_item" id="all">all</p>
+			<p class="category_item" id="colombiana">Food Colombiana</p>
+			<p class="category_item" id="chilena">Food Chilena</p>
+		<p class="category_item" id="mexicana">Food Mexicana</p>
+		</div>
+	</div>
+</div>
+<div class="block_container">
+<div class="row">
+		<div class="col s1 m2">
+<img src="assets/img/cazuelita.jpg" class="comida_item colombiana">
+<img src="assets/img/empanadas.jpeg" class="comida_item colombiana">
+<img src="assets/img/ajiaco.jpg" class="comida_item colombiana">
+<img src="assets/img/empanadapino.jpg" class="comida_item chilena">
+<img src="assets/img/charquican.jpg" class="comida_item chilena">
+<img src="assets/img/tacos.jpg" class="comida_item mexicana">
+<img src="assets/img/sancocho.jpg" class="comida_item colombiana">
+<img src="assets/img/nachos.jpg" class="comida_item mexicana">
+<img src="assets/img/lomopobre.jpg" class="comida_item chilena">
+<img src="assets/img/quesadilla.jpeg" class="comida_item mexicana">
+<img src="assets/img/pastelchoclo.jpg" class="comida_item chilena">
+<img src="assets/img/burrito.jpg" class="comida_item mexicana">
 
-	<script scr="assets/js/app.js"></script>
+	</div>
+	</div>
+</div>
+</section>
+
+	<!--script-->
+	<script src="assets/js/app.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </body>
 </html>
