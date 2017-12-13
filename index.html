@@ -1,85 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	
-	<title>FOODMAP</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		
+		<title>FOODMAP</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
 
-</head>
-<body>
-<!--seccion compuesta por Vista Splash - Preloader-->
-<header>
+	</head>
+	<body>
+	<!-- Modal Structure Food Colombiana -->
 	<div class="container">
 	<div class="row">
-	<div class="col s12 col m12 content">
-		<h1>FOODMAP</h1>
-		<h2>Guatita llena, Corazón contento!!!</h2>
-		<div class="preloader-wrapper active">
-    <div class="spinner-layer spinner-red-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div><div class="gap-patch">
-        <div class="circle"></div>
-      </div><div class="circle-clipper right">
-        <div class="circle"></div>
-      </div>
-    </div>
-  </div>
-		</div>
-	</div>
-</div>
-</header>
-<!--Filtrar opciones de comida-->
-<section>
-<div class="category_container">
-<div class="map_container">
+	  <div id="modal1" class="modal">
+	    <div class="modal-content">
+	      <h4>El mejor sabor colombiano</h4>
+	      <p>Ubicado en Santiago centro, Av.teatinos 2223, teléfono de contacto(2)22673976</p>
+	    </div>
+	    <div class="modal-footer">
+	      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Haz tu pedido ya!!</a>
+	    </div>
+	  </div>
+	  </div>
+	  </div>
+	  <!-- Modal Structure Food Chilena -->
+	<div class="container">
 	<div class="row">
-		<div class="col s12 m12">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53261.74105481415!2d-70.71464238575213!3d-33.45298464939597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c454b424ffbb%3A0x6d26b75308af9274!2sArrieros+Colombianos+Restaurant!5e0!3m2!1ses-419!2scl!4v1513172012724" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	  <div id="modal2" class="modal">
+	    <div class="modal-content">
+	      <h4>Disfruta del sabor chileno</h4>
+	      <p>Ubicado en Santiago centro, Av. San Antonio, teléfono de contacto(2)24785083</p>
+	    </div>
+	    <div class="modal-footer">
+	      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Haz tu pedido ya!!</a>
+	    </div>
+	  </div>
+	  </div>
+	  </div>
+	  <!-- Modal Structure Food Mexicana -->
+	<div class="container">
+	<div class="row">
+	  <div id="modal3" class="modal">
+	    <div class="modal-content">
+	      <h4>El auténtico sabor Mexicano</h4>
+	      <p>Ubicado en Recoleta, Bellavista 14, teléfono de contacto(2)83263405</p>
+	    </div>
+	    <div class="modal-footer">
+	      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Haz tu pedido ya!!</a>
+	    </div>
+	  </div>
+	  </div>
+	  </div>
+
+	<!--seccion compuesta por Vista Splash - Preloader-->
+	<header>
+		<div class="container">
+		<div class="row">
+		<div class="col s12 col m12 content">
+			<h1>FOODMAP</h1>
+			<h2>Guatita llena, Corazón contento!!!</h2>
+			<div class="preloader-wrapper active">
+	    <div class="spinner-layer spinner-red-only">
+	      <div class="circle-clipper left">
+	        <div class="circle"></div>
+	      </div><div class="gap-patch">
+	        <div class="circle"></div>
+	      </div><div class="circle-clipper right">
+	        <div class="circle"></div>
+	      </div>
+	    </div>
+	  </div>
+			</div>
 		</div>
 	</div>
-</div>
+	</header>
+	<!--Filtrar opciones de comida-->
+	<section>
+	<div class="category_container">
+	<div class="map_container">
+		<div class="row">
+			<div class="col s12 m12">
+			<h1>Ubica tu Restaurante Más Cercano</h1>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53261.74105481415!2d-70.71464238575213!3d-33.45298464939597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c454b424ffbb%3A0x6d26b75308af9274!2sArrieros+Colombianos+Restaurant!5e0!3m2!1ses-419!2scl!4v1513172012724" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+		<div class="row">
+			<div class="col s12 m6">
+			<p class="category_item" id="all">all</p>
+				<p class="category_item" id="colombiana">Food Colombiana</p>
+				<p class="category_item" id="chilena">Food Chilena</p>
+			<p class="category_item" id="mexicana">Food Mexicana</p>
+			</div>
+		</div>
 
+	<div class="block_container">
 	<div class="row">
 		<div class="col s12 m6">
-		<p class="category_item" id="all">all</p>
-			<p class="category_item" id="colombiana">Food Colombiana</p>
-			<p class="category_item" id="chilena">Food Chilena</p>
-		<p class="category_item" id="mexicana">Food Mexicana</p>
+			<a class=" modal-trigger" href="#modal1"><img src="assets/img/Cazuelita.jpg" class="comida_item colombiana"></a>
+	<img src="assets/img/Empanadas.jpeg" class="comida_item colombiana">
+	<img src="assets/img/ajiaco.jpg" class="comida_item colombiana">
+	<img src="assets/img/sancocho.jpg" class="comida_item colombiana">
+
+
+		
+		<a class=" modal-trigger" href="#modal2"><img src="assets/img/empanadapino.jpg" class="comida_item chilena"></a>
+	<img src="assets/img/charquican.jpg" class="comida_item chilena">
+	<img src="assets/img/lomopobre.jpg" class="comida_item chilena">
+	<img src="assets/img/pastelchoclo.jpg" class="comida_item chilena">
+
+
+	<a class=" modal-trigger" href="#modal3"><img src="assets/img/tacos.jpg" class="comida_item mexicana"></a>
+	<img src="assets/img/nachos.jpg" class="comida_item mexicana">
+	<img src="assets/img/quesadilla.jpeg" class="comida_item mexicana">
+	<img src="assets/img/burrito.jpg" class="comida_item mexicana">
+	</div>
 		</div>
-	</div>
+		</div>
+		</div>
+	</section>
 
-<div class="block_container">
-<div class="row">
-		<div class="col s12 m6">
-<img src="assets/img/Cazuelita.jpg" class="comida_item colombiana">
-<img src="assets/img/Empanadas.jpeg" class="comida_item colombiana">
-<img src="assets/img/ajiaco.jpg" class="comida_item colombiana">
-<img src="assets/img/sancocho.jpg" class="comida_item colombiana">
-
-
-	<img src="assets/img/empanadapino.jpg" class="comida_item chilena">
-<img src="assets/img/charquican.jpg" class="comida_item chilena">
-<img src="assets/img/lomopobre.jpg" class="comida_item chilena">
-<img src="assets/img/pastelchoclo.jpg" class="comida_item chilena">
-
-
-<img src="assets/img/tacos.jpg" class="comida_item mexicana">
-<img src="assets/img/nachos.jpg" class="comida_item mexicana">
-<img src="assets/img/quesadilla.jpeg" class="comida_item mexicana">
-<img src="assets/img/burrito.jpg" class="comida_item mexicana">
-</div>
-	</div>
-	</div>
-	</div>
-</section>
-
-	<!--script-->
-	<script src="assets/js/app.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-</body>
-</html>
+		<!--script-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script src="assets/js/app.js"></script>
+	</body>
+	</html>
