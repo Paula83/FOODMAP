@@ -4,6 +4,12 @@ $(document).ready(function(){
     }, 2000); // <-- time in milliseconds
 
 
+    setTimeout(function(){
+   $('.category_container').show();
+   }, 4000);
+
+
+/*contenido comida*/
 
 	$('.category_item').click(function(){
 		var category = $(this).attr('id');
